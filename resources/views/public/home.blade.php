@@ -15,7 +15,7 @@
         </div>
         <p class="section-kicker text-warning mb-2"><i class="fa-solid fa-palette me-1"></i> Warisan Leluhur Banyuwangi</p>
         <h1 class="section-title text-white mb-4" style="font-family: 'Cormorant Garamond', serif; font-weight: 800; line-height: 1.15;">
-          Satu tempat untuk menjelajah, memahami, dan menjaga Batik Banyuwangi. Test
+          Satu tempat untuk menjelajah, memahami, dan menjaga Batik Banyuwangi.
         </h1>
         <p class="lead mb-4 text-white-75 text-light opacity-90" style="max-width: 60ch; font-size: 1.05rem; line-height: 1.7;">
           Sistem ini mendokumentasikan motif, filosofi mendalam, teknik pembuatan, aturan adat penggunaan, dan sumber pengetahuan terpercaya agar warisan takbenda maestro batik tetap lestari.
