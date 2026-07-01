@@ -44,15 +44,17 @@
             <p class="text-white small mb-0 mt-1 opacity-75">@yield('page_subtitle')</p>
           @endif
         </nav>
+        <div class="d-flex align-items-center gap-2 d-xl-none ms-auto">
+          <a href="javascript:;" class="nav-link text-white p-0" id="iconNavbarSidenav" aria-label="Buka sidebar admin">
+            <div class="sidenav-toggler-inner">
+              <i class="sidenav-toggler-line bg-white"></i>
+              <i class="sidenav-toggler-line bg-white"></i>
+              <i class="sidenav-toggler-line bg-white"></i>
+            </div>
+          </a>
+        </div>
         <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
           <div class="ms-md-auto pe-md-3 d-flex align-items-center gap-2 flex-wrap justify-content-end">
-            <a href="javascript:;" class="nav-link text-white p-0 d-xl-none" id="iconNavbarSidenav" aria-label="Buka sidebar admin">
-              <div class="sidenav-toggler-inner">
-                <i class="sidenav-toggler-line bg-white"></i>
-                <i class="sidenav-toggler-line bg-white"></i>
-                <i class="sidenav-toggler-line bg-white"></i>
-              </div>
-            </a>
             @yield('page_actions')
           </div>
         </div>
@@ -65,6 +67,34 @@
   </main>
   @include('components.fixed-plugin')
   @include('components.script')
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var body = document.body;
+      var sidenav = document.getElementById('sidenav-main');
+      var openBtn = document.getElementById('iconNavbarSidenav');
+      var closeBtn = document.getElementById('iconSidenav');
+
+      if (!body || !sidenav) return;
+
+      // Argon already binds its own toggle handlers when script loads correctly.
+      if (typeof window.toggleSidenav === 'function') return;
+
+      var openClass = 'g-sidenav-pinned';
+
+      function toggleSidebar(event) {
+        if (event) event.preventDefault();
+        body.classList.toggle(openClass);
+      }
+
+      if (openBtn) {
+        openBtn.addEventListener('click', toggleSidebar);
+      }
+
+      if (closeBtn) {
+        closeBtn.addEventListener('click', toggleSidebar);
+      }
+    });
+  </script>
   @stack('scripts')
 </body>
 
