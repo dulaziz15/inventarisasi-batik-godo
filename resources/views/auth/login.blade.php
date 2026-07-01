@@ -61,7 +61,7 @@
         </form>
 
         <!-- Informative Demo Credentials Alert -->
-        <div class="alert bg-warning bg-opacity-10 border border-warning border-opacity-25 mt-4 mb-0 p-3" style="border-radius: 1rem;">
+        {{-- <div class="alert bg-warning bg-opacity-10 border border-warning border-opacity-25 mt-4 mb-0 p-3" style="border-radius: 1rem;">
           <div class="d-flex gap-2">
             <i class="fa-solid fa-circle-info text-warning mt-1"></i>
             <div>
@@ -72,7 +72,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> --}}
       </div>
     </div>
 
