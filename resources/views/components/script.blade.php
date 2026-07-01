@@ -1,13 +1,9 @@
-  @php
-    $basePath = rtrim(request()->getBaseUrl(), '/');
-    $assetBase = $basePath === '' ? '' : $basePath;
-  @endphp
 <!--   Core JS Files   -->
-  <script src="{{ $assetBase }}/template/assets/js/core/popper.min.js"></script>
-  <script src="{{ $assetBase }}/template/assets/js/core/bootstrap.min.js"></script>
-  <script src="{{ $assetBase }}/template/assets/js/plugins/perfect-scrollbar.min.js"></script>
-  <script src="{{ $assetBase }}/template/assets/js/plugins/smooth-scrollbar.min.js"></script>
-  <script src="{{ $assetBase }}/template/assets/js/plugins/chartjs.min.js"></script>
+  <script src="{{ asset('template/assets/js/core/popper.min.js') }}"></script>
+  <script src="{{ asset('template/assets/js/core/bootstrap.min.js') }}"></script>
+  <script src="{{ asset('template/assets/js/plugins/perfect-scrollbar.min.js') }}"></script>
+  <script src="{{ asset('template/assets/js/plugins/smooth-scrollbar.min.js') }}"></script>
+  <script src="{{ asset('template/assets/js/plugins/chartjs.min.js') }}"></script>
   <script>
     var chartCanvas = document.getElementById("chart-line");
 
@@ -105,6 +101,6 @@
     }
   </script>
   <!-- Github buttons -->
-  <script async defer src="{{ $assetBase }}/template/assets/js/buttons.js"></script>
+  <script async defer src="{{ asset('template/assets/js/buttons.js') }}"></script>
   <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
-  <script src="{{ $assetBase }}/template/assets/js/argon-dashboard.min.js?v=2.1.0"></script>
+  <script src="{{ asset('template/assets/js/argon-dashboard.min.js') }}?v=2.1.0"></script>
