@@ -740,6 +740,13 @@ body.site-body {
     box-shadow: var(--admin-shell-shadow) !important;
 }
 
+@media (min-width: 1200px) {
+    .admin-shell-body .admin-main-content,
+    .admin-shell-body .admin-alert-wrap {
+        margin-left: 17.125rem;
+    }
+}
+
 .admin-sidenav-brand {
     font-family: 'Cormorant Garamond', serif;
     font-size: 1.25rem;
@@ -1060,6 +1067,16 @@ body.site-body {
    ========================================================================== */
 
 @media (max-width: 1199.98px) {
+    .admin-shell-body .admin-main-content,
+    .admin-shell-body .admin-alert-wrap {
+        margin-left: 0 !important;
+    }
+
+    .admin-sidenav {
+        max-height: calc(100vh - 1.5rem);
+        overflow-y: auto;
+    }
+
     .admin-main-content {
         margin-left: 0 !important;
     }

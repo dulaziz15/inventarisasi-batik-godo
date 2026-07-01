@@ -46,6 +46,13 @@
         </nav>
         <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
           <div class="ms-md-auto pe-md-3 d-flex align-items-center gap-2 flex-wrap justify-content-end">
+            <a href="javascript:;" class="nav-link text-white p-0 d-xl-none" id="iconNavbarSidenav" aria-label="Buka sidebar admin">
+              <div class="sidenav-toggler-inner">
+                <i class="sidenav-toggler-line bg-white"></i>
+                <i class="sidenav-toggler-line bg-white"></i>
+                <i class="sidenav-toggler-line bg-white"></i>
+              </div>
+            </a>
             @yield('page_actions')
           </div>
         </div>
